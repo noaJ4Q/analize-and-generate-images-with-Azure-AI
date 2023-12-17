@@ -1,5 +1,15 @@
-# React basic
+# Analize and generate images with Azure AI and OpenAI services
 
-[Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/overview) allows you to easily build [React](https://reactjs.org/) apps in minutes. Use this repo with the [React quickstart](https://docs.microsoft.com/azure/static-web-apps/getting-started?tabs=react) to build and customize a new static site.
+This website allows you to analyze images using its URL and generate images by text.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Used tools
+- Bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Built and deployed with [Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/overview) and GitHub Actions.
+- Computer Vision service offered by Azure to analyze images.
+- OpenAI image generation service to generate images.
+
+You can visit the project site at: [Project site](https://calm-mud-053b23303.4.azurestaticapps.net/)
+
+![Captura de pantalla 2023-12-17 082935](https://github.com/noaJ4Q/analize-and-generate-images-with-Azure-AI/assets/111481057/96833b38-ed94-436b-948f-38df119261aa)
+
+![Captura de pantalla 2023-12-17 083357](https://github.com/noaJ4Q/analize-and-generate-images-with-Azure-AI/assets/111481057/33fbba21-58ff-46df-9c90-f9820b636d0e)

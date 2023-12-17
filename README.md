@@ -5,8 +5,8 @@ This website allows you to analyze images using its URL and generate images by t
 ### Used tools
 - Bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 - Built and deployed with [Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/overview) and GitHub Actions.
-- Computer Vision service offered by Azure to analyze images.
-- OpenAI image generation service to generate images.
+- [Computer Vision](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview-image-analysis?tabs=4-0) service by Azure to analyze images.
+- [OpenAI image generation](https://platform.openai.com/docs/guides/images/image-generation?context=node) service to generate images.
 
 You can visit the project site at: [Project site](https://calm-mud-053b23303.4.azurestaticapps.net/)
 

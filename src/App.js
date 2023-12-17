@@ -55,7 +55,7 @@ function App() {
             {configMessage && <p>{configMessage}</p>}
             {!configMessage && (
                 <div>
-                    <label htmlFor="url">Insert URL or type prompt: </label>
+                    <label htmlFor="url">Insert URL (only jpg) or type prompt: </label>
                     <input
                         size={imageOrPrompt.length + 1}
                         id="url"

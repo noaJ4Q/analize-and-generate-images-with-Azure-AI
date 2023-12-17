@@ -22,9 +22,11 @@ function App() {
         }
     }, []);
 
+    const [isLoading, setIsLoading] = useState(false);
+
     const handleAnalyzeClick = async () => {
+        setIsLoading(true);
         const analysis = await analyzeImage(imageOrPrompt);
-        console.log(analysis);
         setAnalysisResult(
             `Image URL: ${imageOrPrompt}\nAnalysis Result:\n${JSON.stringify(
                 analysis,
@@ -34,14 +36,17 @@ function App() {
         );
         setDisplayedImage(imageOrPrompt);
         setShowImage(true);
+        setIsLoading(false);
     };
 
     const handleGenerateImage = async () => {
+        setIsLoading(true);
         const generation = await generateImage(imageOrPrompt);
         const url = generation.data[0].url;
         setDisplayedImage(url);
         setAnalysisResult(`Image URL: ${url}`);
         setShowImage(true);
+        setIsLoading(false);
     };
 
     return (
@@ -52,6 +57,7 @@ function App() {
                 <div>
                     <label htmlFor="url">Insert URL or type prompt: </label>
                     <input
+                        size={imageOrPrompt.length + 1}
                         id="url"
                         type="text"
                         value={imageOrPrompt}
@@ -64,6 +70,7 @@ function App() {
                     <button type="button" onClick={handleGenerateImage}>
                         Submit
                     </button>
+                    {isLoading && <p>Loading...</p>}
                     <br />
                 </div>
             )}

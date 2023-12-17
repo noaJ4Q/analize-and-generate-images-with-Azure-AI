@@ -29,7 +29,7 @@ function App() {
         const analysis = await analyzeImage(imageOrPrompt);
         setAnalysisResult(
             `Image URL: ${imageOrPrompt}\nAnalysis Result:\n${JSON.stringify(
-                analysis,
+                analysis.captionResult,
                 null,
                 2
             )}`

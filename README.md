@@ -1,6 +1,6 @@
 # Analize and generate images with Azure AI and OpenAI services
 
-This website allows you to analyze images using its URL and generate images by text.
+A website that allows you to analyze images using its URL and generate images by text.
 
 ### Used tools
 - Bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
